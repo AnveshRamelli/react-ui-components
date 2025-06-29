@@ -1,8 +1,11 @@
+import Count from "./components/count"
+
 const App = () => {
   return (
-    <div>
-      App
-    </div>
+    <>
+      <h1 >UI Components</h1>
+      <Count />
+    </>
   )
 }
 
