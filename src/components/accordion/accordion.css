@@ -1,0 +1,32 @@
+.accordion-container {
+  width: 500px;
+  margin-top: 1rem;
+}
+.accordion {
+  margin: 2px 0;
+
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: lightgray;
+    width: 100%;
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  p,
+  h3 {
+    margin: 0;
+  }
+
+  .accordion-content {
+    padding: 5px 10px;
+    width: 100%;
+  }
+}
