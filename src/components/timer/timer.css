@@ -1,0 +1,7 @@
+.timer {
+  font-size: 2rem;
+  font-weight: bolder;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
