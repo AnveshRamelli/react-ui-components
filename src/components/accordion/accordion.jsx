@@ -1,6 +1,7 @@
 import { accordionData } from "./data";
 import "./accordion.css";
 import { useState } from "react";
+import Tooltip from "../tooltip/tooltip";
 const Accordion = () => {
   const [data, setData] = useState(accordionData);
 
@@ -28,9 +29,11 @@ const Accordion = () => {
           <div key={item.id} className="accordion">
             <div className="accordion-header">
               <h3>{item.title}</h3>
-              <button onClick={() => handleClick(item.id)}>
-                {item.isOpen ? "-" : "+"}
-              </button>
+              <Tooltip text={`Click to ${item.isOpen ? "collapse" : "expand"}`}>
+                <button onClick={() => handleClick(item.id)}>
+                  {item.isOpen ? "-" : "+"}
+                </button>
+              </Tooltip>
             </div>
             {item.isOpen && (
               <div className="accordion-content">
