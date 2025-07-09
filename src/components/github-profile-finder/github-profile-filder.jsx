@@ -37,7 +37,7 @@ const GithubProfileFinder = () => {
       <div className="card">
         <img src={user?.avatar_url} alt="avatar" width={200} height={200} />
         <a href={user?.html_url} target="_blank">
-          <h2>{user?.name}</h2>
+          <h2>{user?.login}</h2>
         </a>
         <p>{user?.bio}</p>
       </div>
